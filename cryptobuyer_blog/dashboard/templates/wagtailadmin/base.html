@@ -1,0 +1,28 @@
+{% overextends "wagtailadmin/base.html" %}
+{% load staticfiles %}
+
+{% block branding_logo %}
+    <img
+        src="{% static "images/cryptobuyer-logo-white.svg" %}"
+        alt="Cryptobuyer"
+        width="150" />
+{% endblock %}
+
+{% block extra_css %}
+    <style media="screen">
+        /*.page-explorer .listing .index {
+            background-color: #6fbbc4;
+        }
+        header {
+            background-color: #6fbbc4;
+        }*/
+        @media screen and (min-width: 50em) {
+            .logo img {
+                width: 150px;
+            }
+            /*.tab-nav.merged {
+                background-color: #6fbbc4;
+            }*/
+        }
+    </style>
+{% endblock %}

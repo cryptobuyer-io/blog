@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load staticfiles wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+
+{% block landing-header %}
+{% endblock %}
+
+{% block content %}
+  <!-- Article -->
+  <div class="article margin-b-80">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <div class="text-center">
+                  <h3 class="title">{{ page.translated_title }}</h3>
+                  <h6 class="title-uppercase">{{ page.date }}</h6>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            {% if page.main_image %}
+              <div class="article-image">
+                {% image page.main_image width-1024 %}
+              </div>
+            {% endif %}
+            <div class="article-content">
+              {{ page.translated_content|richtext}}
+              <p class="social">
+                  <span class='st_facebook_hcount' displayText='Facebook'></span>
+                  <span class='st_twitter_hcount' displayText='Tweet'></span>
+                  <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+                  <span class='st_email_hcount' displayText='Email'></span>
+              </p>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!-- ./Article -->
+{% endblock %}
+
+{% block pager %}
+{% endblock %}
+
+{% block extra_js %}
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "0c094491-c0eb-4c29-b40f-ee8f160ab94d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+{% endblock %}

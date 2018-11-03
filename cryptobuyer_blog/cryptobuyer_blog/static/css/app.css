@@ -1,0 +1,332 @@
+/*body {
+    background-color: #f6f6f7;
+}
+.wrapper {
+    background-color: #f6f6f7;
+}
+.col-content {
+    background-color: #fff;
+}*/
+.landing-header {
+    background-image: url('../img/top-block.jpg');
+    background-size: cover;
+    min-height: 570px;
+    position: relative;
+}
+.powered-by-uphold {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.navbar .navbar-brand {
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+.motto {
+    color: #ffffff;
+    margin-top: 220px;
+}
+.heart {
+    color: #EB5E28;
+}
+
+.article-image .card {
+    background-size: cover;
+    min-height: 200px;
+    width: 100%;
+}
+.landing-page-news-title
+{
+    font-size: 1.4em;
+}
+.info-landing {
+    margin-bottom: 0px;
+}
+
+.navbar-ct-white {
+    background-color: #ffffff;
+}
+
+.btn-connect-with-uphold {
+    background-color: transparent;
+    border-width: 0px;
+    padding: 0px;
+}
+
+.main {
+	min-height: calc(100vh - 113px);
+    /*margin-bottom: 100px;*/
+}
+
+.table-requisites > tbody > tr > td
+{
+    vertical-align: top;
+}
+
+.id-form {
+    margin-bottom: 30px;
+}
+
+.id-placeholder {
+    width: 100%;
+}
+
+.icon-declaration {
+    font-size: 80px;
+}
+
+.icon-declaration i {
+    padding: 30px;
+}
+
+/* File uploader */
+/*.btn-file {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}*/
+
+
+
+/* Compliance */
+.result p {
+    font-size: 12px;
+}
+
+.result-sucess {
+    color: #7AC29A;
+}
+.result-error {
+    color: #EB5E28;
+}
+
+.label_check {
+    font-weight: normal;
+}
+
+.help-message-block p{
+    font-size: 12px;
+}
+
+
+/* ************************************************************************** */
+/* Sell app                                                                   */
+/* ************************************************************************** */
+.form-group h6 {
+    text-align: left;
+}
+
+.division {
+   float: none;
+   margin: 0 auto;
+   overflow: hidden;
+   margin: 20px 0;
+   position: relative;
+   text-align: center;
+   width: 100%;
+}
+.division .line.l {
+    left: 0;
+}
+.division .line {
+    border-top: 1px solid #F1EAE0;
+    position: absolute;
+    top: 10px;
+    width: 40%;
+}
+.division .line.r {
+    right: 0;
+}
+.division .line {
+   border-top: 1px solid #F1EAE0;
+   position: absolute;
+   top: 10px;
+   width: 40%;
+}
+
+.action-cols {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sell-btc-form {
+    padding-bottom: 100px;
+}
+
+.sell-btc-form .actions input[type="submit"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.sell-btc-form .actions a {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.has-error span.input-group-addon {
+    background-color: #FFC0A4;
+}
+
+.has-error .input-group input {
+    color: #EB5E28;
+}
+.has-error ul.errorlist {
+    color: #EB5E28;
+    font-size: 12px;
+}
+
+/* CANCEL ORDER */
+#cancel_order_form_container {
+    width: 100%;
+}
+
+.text-green {
+    color: #5cb85c !important;
+}
+
+.table > thead > tr > th {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.label {
+    /* font-size: 0.65em;*/
+}
+
+.pagination {
+    font-size: 0.85em;
+}
+.table-requisites > tbody > tr > td {
+    font-size: 15px;
+}
+
+.add_button_container {
+    margin-bottom: 20px;
+}
+
+#progress-bar-container .progress
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.progress-bar span {
+    display: none;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+p.claim-text {
+    font-style: italic;
+}
+
+p.claim-text span {
+    font-weight: 600;
+}
+
+.navbar-brand > img {
+    display: block;
+    margin-top: 6px;
+}
+
+.change-password-action-container a {
+    width: 99%;
+}
+
+.change-password-action-container input[type="submit"] {
+    width: 99%;
+}
+
+
+/* Dashboard */
+.card .icon-big {
+    font-size: 3em;
+    min-height: 64px;
+}
+
+.card .numbers {
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.card .numbers p {
+    margin: 0;
+}
+.card .footer {
+    padding: 0;
+    line-height: 30px;
+}
+.card .footer {
+    padding: 0;
+    line-height: 30px;
+}
+.card .footer {
+    background-attachment: fixed;
+    background-color: #fff;
+    position: relative;
+    line-height: 20px;
+}
+
+.card .footer hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card .footer div {
+    display: inline-block;
+}
+
+.card .stats {
+    color: #a9a9a9;
+    font-weight: 300;
+}
+
+.card .stats i {
+    margin-right: 2px;
+    min-width: 15px;
+    display: inline-block;
+}
+
+.fa-big {
+  font-size: 1.5em;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.img-bitgo-instant {
+    width: 200px !important;
+    max-width: 200px !important;
+    height: auto;
+}
+.table_list_bank_account {
+    font-size: 13px !important;
+}
+
+.btc_or_vef_container .btn {
+    border-radius: 0px;
+}
+
+.footer .copyright {
+    font-size: 0.7em;
+    line-height: 1.5em;
+}

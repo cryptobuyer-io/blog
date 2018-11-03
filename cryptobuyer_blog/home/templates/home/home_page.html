@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load i18n staticfiles wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block landing-header %}
+  {% if page.hero_image %}
+    {% image page.hero_image width-1280 as hero_image %}
+  {% endif %}
+
+  <!-- landing-header -->
+  <div class="landing-header" style="background-image: url('{{ hero_image.url }}')">
+      <div class="container text-center">
+          <div class="motto">
+              <h2>{{ page.translated_intro }}</h2>
+          </div>
+      </div>
+  </div>
+  <!-- ./landing-header -->
+{% endblock %}
+
+{% block content %}
+  {% for blog in blogs  %}
+  <!-- Article -->
+  <div class="article">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <div class="text-center">
+                  <a href="{{ blog.url }}"><h3 class="title">{{ blog.translated_title }}</h3></a>
+                  <h6 class="title-uppercase">{{ blog.date }}</h6>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            {% if blog.main_image %}
+              <div class="article-image">
+                <a href="{{ blog.url }}">
+                  {% image blog.main_image width-1024 %}
+                </a>
+              </div>
+            {% endif %}
+            <div class="article-content">
+              {{ blog.translated_intro }}
+            </div>
+          </div>
+      </div>
+  </div>
+  <!-- ./Article -->
+  {% endfor %}
+{% endblock %}
+
+{% block pager %}
+  {% if is_paginated %}
+    <hr>
+    <div class="row margin-b-20">
+      <div class="col-md-2">
+          <div class="pull-left">
+            {% if blogs.has_previous %}
+              <a href="?page={{ blogs.previous_page_number }}"
+                class="btn btn-simple btn-default btn-move-left"><i class="fa fa-angle-left"></i> {% trans "Previous Posts" %}</a>
+            {% endif %}
+          </div>
+      </div>
+        <div class="col-md-2 col-md-offset-8">
+            <div class="pull-right">
+              {% if blogs.has_next %}
+                <a href="?page={{ blogs.next_page_number }}"
+                  class="btn btn-simple btn-default btn-move-right">{% trans "Older Posts" %} <i class="fa fa-angle-right"></i></a>
+              {% endif %}
+            </div>
+        </div>
+    </div>
+  {% else %}
+    <div class="row margin-b-80">
+      &nbsp;
+    </div>
+  {% endif %}
+{% endblock %}

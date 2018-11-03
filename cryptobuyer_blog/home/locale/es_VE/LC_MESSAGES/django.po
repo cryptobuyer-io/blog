@@ -1,0 +1,37 @@
+# Cryptobuyer Translation File.
+# Copyright (C) 2016 Coincox
+# RUBEN COLINA <ruben.colina@coincox.com>, 2016
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-09 22:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: home/models.py:18
+msgid "Intro"
+msgstr "Introducción"
+
+#: home/models.py:26
+msgid "Main Image"
+msgstr "Imagen Principal"
+
+#: home/templates/home/home_page.html:61
+msgid "Previous Posts"
+msgstr "Página Anterior"
+
+#: home/templates/home/home_page.html:69
+msgid "Older Posts"
+msgstr "Página Siguiente"
+
+msgid "Back to cryptobuyer.io"
+msgstr "Volver a cryptobuyer.io"
